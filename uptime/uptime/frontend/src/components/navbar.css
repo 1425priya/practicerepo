@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.links{
+    margin-left: 20px;
+    display: flex;
+}
+.login-reg{
+    margin-left: 120px;
+    display: flex;
+    gap: 30px;
+}
+.login-reg a{
+    background-color: lightgreen;
+    border-radius: 25px;
+    font-weight: 700;
+    color: white;
+    padding: 12px 24px;
+    box-shadow: 0 0 2px lightgreen;
+    transition: 0.2s ease-out;
+    text-align: center;
+    text-decoration: none;
+}
+.login-reg a:hover{
+    background-color: #3bd671;
+}
+.menu{
+    display: none;
+}
+.account-login{
+    display: none;
+}
+@media screen and (max-width:470px) {
+    .links{
+        display: none;
+    }
+    .menu{
+        display: flex;
+        margin-left: 165px;
+    }
+    .text{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .login-reg{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 50px;
+    }
+    .login-reg Button{
+        color: gray;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .login-reg Button:hover{
+        color: #3bd671;
+    }
+    .login-reg a{
+        display: flex;
+        justify-content: flex-start;
+    }
+}
